@@ -1,0 +1,68 @@
+.barb {
+    background: url("walk.png") 1201px 801px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    animation: walk 1s steps(3) infinite;
+    position: absolute;
+    height: 790px;
+    width: 1201px;
+    margin: 0 801px;
+    margin-top: 500px;
+    bottom: 0;
+}
+
+@keyframes walk{
+  0%{background-position: 0 0;}
+  20.0000%{background-position: -3603px 0px;}
+
+  20.0001%{background-position: 0px -801px;}
+  40.0000%{background-position: -3603px -801px;}
+
+  40.0001%{background-position: 0px -1602px;}
+  60.0000%{background-position: -3603px -1602px;}
+
+  60.0001%{background-position: 0px -2403px;}
+  80.0000%{background-position: -3603px -2403px;}
+
+  80.0001%{background-position: 0px -3204px;}
+  100%{background-position: -3603px -3204px;}
+}
+
+.barb:hover {
+    background: url("jump.png") 801px 6005px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    animation: mix 1s steps(5) infinite;
+    position: absolute;
+    height: 790px;
+    width: 1201px;
+    margin: 0 801px;
+    margin-top: 500px;
+    bottom: 0;
+  }
+
+  @keyframes mix{
+    0%{background-position: 0 0;}
+    100%{background-position: -6005px 0px;}
+  }
+
+  body {
+      background: url("full-bg.png") 4467px 740px;
+      animation: 10s linear 0s normal none infinite full;
+      background-attachment: fixed;
+      padding: 0;
+      margin: 0;
+    }
+
+@keyframes full{
+  from {background-position: 0 0;}
+  to {background-position: -4467px 0px;}
+}
+
+
+ 
+
+  @keyframes cerca {
+    from {background-position: 0 0;}
+    to {background-position: -1674px 0px;}
+  }
